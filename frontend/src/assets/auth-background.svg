@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200" role="img" aria-label="Abstract premium event lights">
+  <defs>
+    <radialGradient id="goldGlow" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#F5A623" stop-opacity="0.6"/>
+      <stop offset="45%" stop-color="#F5A623" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#0D0F1A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="75%" cy="20%" r="58%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.42"/>
+      <stop offset="48%" stop-color="#3B82F6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0D0F1A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stage" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#171A2B"/>
+      <stop offset="100%" stop-color="#070912"/>
+    </linearGradient>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#stage)"/>
+  <rect width="1800" height="1200" fill="url(#goldGlow)"/>
+  <rect width="1800" height="1200" fill="url(#blueGlow)"/>
+  <g opacity="0.32" filter="url(#blur)">
+    <circle cx="280" cy="230" r="165" fill="#F5A623"/>
+    <circle cx="1350" cy="210" r="210" fill="#3B82F6"/>
+    <circle cx="1050" cy="930" r="260" fill="#F5A623"/>
+  </g>
+  <g opacity="0.24" stroke="#F5A623" stroke-width="2" fill="none">
+    <path d="M120 760 C420 560 680 860 960 640 S1420 450 1690 690"/>
+    <path d="M80 920 C430 700 810 980 1180 740 S1520 680 1760 820"/>
+  </g>
+  <g opacity="0.12" stroke="#FFFFFF" stroke-width="1">
+    <path d="M0 1010 H1800"/>
+    <path d="M0 1080 H1800"/>
+    <path d="M0 1150 H1800"/>
+  </g>
+</svg>

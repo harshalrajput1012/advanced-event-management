@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: advanced-event-management
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/event_management?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 8MB
+      max-request-size: 8MB
+  mail:
+    host: ${MAIL_HOST:localhost}
+    port: ${MAIL_PORT:1025}
+
+app:
+  jwt:
+    secret: ${JWT_SECRET:change-this-secret-to-a-very-long-production-value-of-at-least-64-characters}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000}
+  upload-dir: ${UPLOAD_DIR:uploads/events}
+  cors-origins: ${CORS_ORIGINS:http://localhost:5173,http://127.0.0.1:5173,http://localhost:5174,http://127.0.0.1:5174}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
